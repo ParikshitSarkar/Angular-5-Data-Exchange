@@ -1,0 +1,29 @@
+<div class="container">
+
+<h1> Inter-Component Data Exchange in Angular 5</h1>
+
+  
+  <div class="parent">
+    <h2>
+    Parent 
+    </h2>
+    <div class="childMsg">
+        <b> Child Message: </b> {{message}}
+    </div>
+    
+  
+    
+    <div class="mainMsg">
+        
+        <b>Message :</b> {{mainMsg}}
+    </div>
+
+
+    <child (msgEvent) = "rcvMsgEvent($event)"  [parentMsg] = "mainMsg"></child>
+
+    <sibling></sibling>
+  </div>
+
+</div>
+
+

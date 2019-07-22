@@ -1,0 +1,31 @@
+<div class="child">	
+	<h2>
+		Child 
+	</h2>
+  <div class="messages">
+
+    <p>
+    <b> Message: </b> {{msg}}
+    </p>
+    <br>
+    <p>
+    <b> Parent Message: </b> {{parentMsg}}
+    </p>
+    
+  </div>
+ 	  
+
+	<div class="childInput">
+    <br><br>
+		
+   <label for="childInput"> <b> Colour Preference : </b> </label>
+
+   <input type="text" id="childInput"  [(ngModel)] = "colour" [style.background] = "colour" > 
+
+	</div>
+    
+  <button class="childBtn" (click) = "sendMsgEvent()">
+    Send Msg To Parent
+  </button> 
+
+</div>
